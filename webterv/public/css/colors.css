@@ -1,0 +1,9 @@
+:root{
+    --main-color: #202222;
+    --bg-color: #243131;
+    --post-border: gray;
+    --post-text: rgba(255, 255, 255, 0.75);
+    --post-background: var(--main-color);
+    --post-background-secondary: #121313;
+    --highlight-color: red;
+}

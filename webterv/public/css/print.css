@@ -1,0 +1,51 @@
+@media print {
+    body {
+        color: black !important;
+        background-color: white !important;
+    }
+
+    footer, header, #mySwiper {
+        display: none !important;
+    }
+
+    main {
+        position: static !important;
+    }
+
+    .user-settings-container {
+        flex-direction: column !important;  
+        gap: 25px !important;
+    }
+
+    .forum-background-image {
+        display: none !important;
+    }
+
+    .sides {
+        flex-direction: column !important;
+    }
+
+    .side {
+        width: 100vw !important;
+        height: auto !important;
+        margin-top: 50px !important;
+    }
+
+    #logout {
+        bottom: 0px !important;
+    }
+
+    #user-profile-img {
+        width: 10% !important;
+    }
+
+    :root{
+        --main-color: white !important;
+        --bg-color: white !important;
+        --post-border: black !important;
+        --post-text: black !important;
+        --post-background: var(--main-color) !important;
+        --post-background-secondary: white !important;
+        --highlight-color: red !important;
+    }
+}

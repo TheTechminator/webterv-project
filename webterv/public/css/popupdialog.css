@@ -1,0 +1,87 @@
+.dialog-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #2022228F;
+    color: white;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.dialog {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    margin: 100px auto;
+    background-color: var(--post-background);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: scale cubic-bezier(0.65, 0.05, 0.36, 1) 300ms;
+    scale: 0; 
+}
+
+.dialog-container-visible {
+    display: block !important;
+}
+
+.dialog-visible {
+    scale: 1 !important;
+}
+
+
+.dialog-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.4rem;
+    color: red;
+    cursor: pointer;
+}
+
+.dialog-close-btn:hover {
+    scale: 1.3;
+}
+
+.dialog-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.dialog-form fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.dialog-form fieldset label {
+    margin: 10px 0 5px 0;
+}
+
+.dialog-submit-btn {
+    margin-top: 15px;
+    width: 150px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dialog-submit-btn:hover {
+    filter: brightness(0.8);
+}

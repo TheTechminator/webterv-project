@@ -1,0 +1,30 @@
+.notification{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    background: red;
+    width: 300px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+.notification .notification-body{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.notification progress{
+    height: 3px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    border: none;
+    top: 0px;
+}
+.notification progress::-moz-progress-bar { background: white; }
+.notification progress::-webkit-progress-value { background: white; }
+.notification progress { color: white; }

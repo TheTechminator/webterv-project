@@ -1,0 +1,67 @@
+@media only screen and (min-width: 800px) {
+   .sidenav {
+      transform: none !important;
+   }
+
+   .sidenav .closebtn{
+      display: none;
+   }
+
+   .leftNavOpenBtn {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   .sidenav {
+      width: 220px;
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      left: -220px;
+      background-color: white;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition: transform 200ms linear;
+      transform: none;
+      will-change: transform;
+      white-space: nowrap;
+      text-overflow: clip;
+   }
+
+   .leftNavOpenBtn {
+      display: block;
+      font-size: 25px;
+      color: var(--post-text);
+      margin-right: 15px;
+      padding-bottom: 5px;
+      cursor: pointer;
+   }
+
+   .leftNavOpenBtn:hover {
+      text-shadow: 0px 0px 10px rgba(255, 0, 0, 150);
+   }  
+
+   .sidenav .closebtn{
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 40px;
+      z-index: 10;
+   }
+
+   #swipablePad{
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      z-index: 8;
+      top: 0;
+      left: -95vw;
+      background-color: black;
+      opacity: 0;
+      transform: none;
+      transition: opacity 0.2s;
+      will-change: transform, opacity;
+   }
+}

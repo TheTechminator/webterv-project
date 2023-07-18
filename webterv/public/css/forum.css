@@ -1,0 +1,57 @@
+.forum-background-image {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 200px;
+}
+
+.forum-info {
+    background-color: var(--main-color);
+    color: var(--post-text);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-and-topics-container {
+    flex-basis: 90%;
+}
+
+.forum-pic {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.forum-pic img {
+    width: 100%;
+}
+
+.ftitle h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.join-button-container{
+    display: flex;
+    gap: 4px;
+}
+
+.fjoin-button {
+    border: 1px solid var(--post-text);
+    border-radius: 10px;
+    padding: 5px 15px;
+    background: none;
+    color: var(--post-text);
+}
+.fdelete-button {
+    color: red;    
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background: none;
+}

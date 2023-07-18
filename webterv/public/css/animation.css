@@ -1,0 +1,49 @@
+@keyframes forog {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes beuszas{
+    0%{
+        right: 150%;
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        right: 0px;
+        opacity: 1;
+        height: 100%;
+    }
+}
+@keyframes beuszas-fentrol{
+    0%{
+        top: 0px;
+        opacity: 0;
+    }
+    100%{
+        top: 80px;
+        opacity: 1;
+    }
+}
+.zoom-in:hover {
+    transform: scale(1.1);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.zoom-in {
+    transform: scale(1);
+    transition: all 0.3s;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.btn-hover:hover{
+    filter: brightness(0.8);
+}
+
+.btn-hover{
+    transition: filter 0.3s;
+    cursor: pointer;
+}
